@@ -157,7 +157,7 @@ const AboutSection = () => (
           <p className="text-gray-600 mb-6">{homeData.profile.description}</p>
           <h3 className="text-xl font-semibold text-gray-700 mb-2">Visi</h3>
           <p className="text-gray-600 mb-4 italic">
-            "{homeData.profile.vision}"
+            &ldquo;{homeData.profile.vision}&rdquo;
           </p>
           <h3 className="text-xl font-semibold text-gray-700 mb-2">Misi</h3>
           <ul className="list-disc list-inside text-gray-600 space-y-1">
@@ -372,7 +372,9 @@ const TestimonialsSection = () => {
               {homeData.testimonials.map((item, index) => (
                 <div key={index} className="w-full flex-shrink-0 p-8">
                   <div className="flex flex-col justify-center h-full">
-                    <p className="text-lg italic mb-6">"{item.quote}"</p>
+                    <p className="text-lg italic mb-6">
+                      &ldquo;{item.quote}&rdquo;
+                    </p>
                     <div className="flex items-center">
                       <img
                         src={item.portrait}
